@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forts</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+        .forts-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        
+        .fort-card {
+            margin-top: 100px;
+            text-align: center;
+            width: 30%;
+        }
+        
+        .fort-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .more-btn {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .modal-content {
+            background: white;
+            padding: 20px;
+            width: 50%;
+            margin: 10% auto;
+            border-radius: 5px;
+            height: 75vh;
+            overflow: scroll;
+        }
+        
+        .close {
+            float: right;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        #p{
+            overflow: scroll;
+        }
+            </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+            </div>
+            <div class="nav-link">
+                <a href="./index.html">HOME</a>
+                <a href="#contactus">CONTACT US</a>
+            </div>
+        </div>
+    </header>
+    <main>
+       
+       
+        <div class="forts-container">
+            <div class="fort-card">
+                <img src="images/fort.jpg" alt="Fort">
+                <h3>Gandikota Fort</h3>
+                <button class="more-btn" onclick="openModal('gandikota')">More</button>
+            </div>
+    
+            <div class="fort-card">
+                <img src="images/fort.jpg" alt="Fort">
+                <h3>Golconda Fort</h3>
+                <button class="more-btn" onclick="openModal('golconda')">More</button>
+            </div>
+    
+            <div class="fort-card">
+                <img src="images/fort.jpg" alt="Fort">
+                <h3>Kondaveedu Fort</h3>
+                <button class="more-btn" onclick="openModal('kondaveedu')">More</button>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div id="infoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="fortTitle"></h2>
+                <p id="fortHistory"></p>
+                <h3>Nearest Travels</h3>
+                <ul id="travelList"></ul>
+                <h3>Nearest Hotels</h3>
+                <ul id="hotelList"></ul>
+                <h3>Famous Food</h3>
+                <ul id="foodList"></ul>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <footer class="footer" id="contactus">
+        <div class="footer-container">
+            <!-- Attractions Column -->
+            <div class="footer-column">
+                <h5>Attractions</h5>
+                <ul>
+                    <li>Srikalahasti</li>
+                    <li>Chandragiri Fort</li>
+                    <li>Tirupathi</li>
+                    <li>Nagarjuna Konda</li>
+                    <li>Bugga Ramalingeswara Temple</li>
+                    <li>Lepakshi</li>
+                    <li>Araku</li>
+                    <li>Simhachalam</li>
+                </ul>
+            </div>
+            <!-- Explore Column -->
+            <div class="footer-column">
+                <h5>Explore</h5>
+                <ul>
+                    <li>Media Room</li>
+                    <li>360 Virtual Reality</li>
+                    <li>Photos/Videos</li>
+                    <li>E-Brochures</li>
+                    <li>News Articles</li>
+                    <li>Awards and Recognitions</li>
+                </ul>
+            </div>
+            <!-- Experience Column -->
+            <div class="footer-column">
+                <h5>Experience</h5>
+                <ul>
+                    <li>Photography</li>
+                    <li>Boating</li>
+                    <li>Museum</li>
+                    <li>Trekking</li>
+                    <li>Historical</li>
+                </ul>
+            </div>
+            <!-- Others Column -->
+            <div class="footer-column">
+                <h5>Others</h5>
+                <ul>
+                    <li>Tenders</li>
+                    <li>Notifications</li>
+                    <li>Tourism Policy & Other Documents</li>
+                    <li>Contact Us</li>
+                    <li>RTI</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2025 AP Tourism Authority</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

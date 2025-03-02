@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <title>Dam</title>
+        <style>
+    
+        </style>
+    </head>
+    <body>
+    
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="">
+                </div>
+                <div class="nav-link">
+                    <a href="./index.html">HOME</a>
+                    <a href="#contactus">CONTACT US</a>
+                </div>
+            </div>
+        </header>
+    
+        <div class="forts-container">
+            <div class="fort-card">
+                <img src="images/dam.jpg" alt="Fort">
+                <h3>Nagarjuna sagar Dam</h3>
+                <button class="more-btn" onclick="openModal('gandikota')">More</button>
+            </div>
+    
+            <div class="fort-card">
+                <img src="images/dam.jpg" alt="Fort">
+                <h3>Srisaliam Dam</h3>
+                <button class="more-btn" onclick="openModal('golconda')">More</button>
+            </div>
+    
+            <div class="fort-card">
+                <img src="images/dam.jpg" alt="Fort">
+                <h3>Prakasam Barrage</h3>
+                <button class="more-btn" onclick="openModal('kondaveedu')">More</button>
+            </div>
+            <div class="fort-card">
+                <img src="images/dam.jpg" alt="Fort">
+                <h3>Polavaram project</h3>
+                <button class="more-btn" onclick="openModal('kondaveedu')">More</button>
+            </div>
+            <div class="fort-card">
+                <img src="images/dam.jpg" alt="Fort">
+                <h3>Tatipudi Reservoir</h3>
+                <button class="more-btn" onclick="openModal('kondaveedu')">More</button>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div id="infoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="fortTitle"></h2>
+                <p id="fortHistory"></p>
+                <h3>Nearest Travels</h3>
+                <ul id="travelList"></ul>
+                <h3>Nearest Hotels</h3>
+                <ul id="hotelList"></ul>
+                <h3>Famous Food</h3>
+                <ul id="foodList"></ul>
+            </div>
+        </div>
+
+
+    <footer class="footer" id="contactus">
+        <div class="footer-container">
+            <!-- Attractions Column -->
+            <div class="footer-column">
+                <h5>Attractions</h5>
+                <ul>
+                    <li>Srikalahasti</li>
+                    <li>Chandragiri Fort</li>
+                    <li>Tirupathi</li>
+                    <li>Nagarjuna Konda</li>
+                    <li>Bugga Ramalingeswara Temple</li>
+                    <li>Lepakshi</li>
+                    <li>Araku</li>
+                    <li>Simhachalam</li>
+                </ul>
+            </div>
+            <!-- Explore Column -->
+            <div class="footer-column">
+                <h5>Explore</h5>
+                <ul>
+                    <li>Media Room</li>
+                    <li>360 Virtual Reality</li>
+                    <li>Photos/Videos</li>
+                    <li>E-Brochures</li>
+                    <li>News Articles</li>
+                    <li>Awards and Recognitions</li>
+                </ul>
+            </div>
+            <!-- Experience Column -->
+            <div class="footer-column">
+                <h5>Experience</h5>
+                <ul>
+                    <li>Photography</li>
+                    <li>Boating</li>
+                    <li>Museum</li>
+                    <li>Trekking</li>
+                    <li>Historical</li>
+                </ul>
+            </div>
+            <!-- Others Column -->
+            <div class="footer-column">
+                <h5>Others</h5>
+                <ul>
+                    <li>Tenders</li>
+                    <li>Notifications</li>
+                    <li>Tourism Policy & Other Documents</li>
+                    <li>Contact Us</li>
+                    <li>RTI</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2025 AP Tourism Authority</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
